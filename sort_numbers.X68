@@ -1,19 +1,26 @@
-*-----------------------------------------------------------
-* Title      :
-* Written by :
-* Date       :
-* Description:
-*-----------------------------------------------------------
-    ORG    $1000
-START:                  ; first instruction of program
+*------------------------------------------------
+* Titulo : P1 (2024-2025) - Selection Sort
+* Autores: Harol Mijael Jorge López y Alumno 2
+*------------------------------------------------
+    ORG $1000
 
-* Put program code here
+N: EQU 6
+V: DC.B 5,3,8,10,1,4
+VIN: DS.B N
+*--------------------------------------------
+
+START:
+    LEA V,A0
+    CLR D0
+    MOVEQ N, D0
+LOOP:
+    BMI 
 
     SIMHALT             ; halt simulator
 
 * Put variables and constants here
 
-    END    START        ; last line of source
+    END    START
 
 *~Font name~Courier New~
 *~Font size~10~
